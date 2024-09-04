@@ -1,0 +1,21 @@
+name: CD
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deliver:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: arquivoteste
+          path: |
+            '**.py'
+            README.md
+            pytest.ini
+            requirements.txt
