@@ -15,7 +15,9 @@ jobs:
         with:
           name: arquivoteste
           path: |
-            '**.py'
+            main.py
+            __init__.py
+            test_main.py
             README.md
             pytest.ini
             requirements.txt
