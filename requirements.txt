@@ -1,1 +1,3 @@
-fastapi==0.112.1
+fastapi
+pytest
+httpx
