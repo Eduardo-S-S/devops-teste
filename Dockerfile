@@ -1,4 +1,4 @@
-FROM python:3.11-alpinedocker logs
+FROM python:3.11-alpine
 
 WORKDIR /app
 
